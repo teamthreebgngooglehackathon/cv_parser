@@ -17,7 +17,7 @@ import nltk
 nltk.download('stopwords') # comment out after first run
 
 from pyresparser import ResumeParser
-data = ResumeParser('Michaela_Links_CV.pdf').get_extracted_data()
+data = ResumeParser('input_CV_here.pdf').get_extracted_data()
 
 print("\n\n",data)
 
