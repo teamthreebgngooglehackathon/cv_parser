@@ -12,17 +12,18 @@ Created on Sat Oct 30 09:33:13 2021
 
 """
 
-# Outputs dictionary of words found in CV file
-
+import json
 import nltk
-nltk.download('stopwords') # comment out after first run
+
+# nltk.download('stopwords') # comment out after first run
 
 from pyresparser import ResumeParser
-data = ResumeParser('input_CV_here.pdf').get_extracted_data()
+data = ResumeParser('Michaela_Links_CV.pdf').get_extracted_data()
 
-print("\n\n",data)
+# print("\n\n",data)
 
-
+json_object = json.dumps(data, indent = 4) 
+print("\n\n", json_object)
 
 
 
