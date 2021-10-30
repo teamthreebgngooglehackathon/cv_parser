@@ -12,6 +12,7 @@ Created on Sat Oct 30 09:33:13 2021
 
 """
 
+# Outputs dictionary of words found in CV file
 
 import nltk
 nltk.download('stopwords') # comment out after first run
